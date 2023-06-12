@@ -1,0 +1,10 @@
+USERNAME    = $(shell whoami)
+USER_UID    = $(shell id -u)
+USER_GID    = $(shell id -g)
+WORK_DIR    = $(shell pwd)/
+
+
+SHARED_DIRS  = /home/$(USERNAME)/.config \
+	       /home/$(USERNAME)/.ssh        \
+		   /home/$(USERNAME)/.aws        \
+	       $(WORK_DIR)

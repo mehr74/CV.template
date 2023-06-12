@@ -1,0 +1,87 @@
+\documentclass{resume}
+\usepackage{url}
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{outline}
+\usepackage{subfiles} % Best loaded last in the preamble
+\usepackage[inline]{enumitem}
+\usepackage{multicol}
+\hypersetup{bookmarksopen=true}
+
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-15pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\marginparwidth}{0.0in}
+\addtolength{\marginparwidth}{-\marginparsep}
+\setlength{\evensidemargin}{-0.3in}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-1.3in}
+\addtolength{\textwidth}{-0.9\oddsidemargin}
+\addtolength{\textwidth}{\marginparwidth}
+\addtolength{\textwidth}{\marginparsep}
+\setlength{\topmargin}{-1.2in}
+\addtolength{\textheight}{+1.5in}
+
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\bullet$}
+
+\newcommand{\first}{$\mbox{1}^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$\mbox{2}^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$\mbox{3}^{\mbox{\scriptsize rd}}$\ }
+\newcommand{\fourth}{$\mbox{4}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\fifth}{$\mbox{5}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\seventh}{$\mbox{7}^{\mbox{\scriptsize th}}$\ }
+\newcommand{\thirtythird}{$\mbox{33}^{\mbox{\scriptsize rd}}$\ }
+
+\newcommand{\blueURL}[2]{\href{#1}{\textcolor{blue}{#2}}}
+
+\author{Mehrshad Lotfi Foroushani}
+
+
+% ------ Address --------------------------------------------------------
+\address{
+        Frankfurt am Main \\
+        Germany, \\
+	Last Update: February 2023}
+    {Phone: +49 177 7819313\\
+      Email:	
+            \href{mailto:mlotfi@mpi-sws.org}{\texttt{mlotfi@mpi-sws.org}}\\
+            \href{https://mehrshad.io}{\texttt{https://mehrshad.io/}}}
+\def\shr{Universität des Saarlandes}
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+
+\subfile{sections/objective.tex}
+\subfile{sections/skills-short.tex}
+\subfile{sections/edu-short.tex}
+\subfile{sections/tech-short.tex}
+\subfile{sections/awards.tex}
+\subfile{sections/language.tex}
+% \subfile{sections/teach.tex}
+% \subfile{sections/project.tex}
+% \subfile{sections/pub.tex}
+% \subfile{sections/interest.tex}
+% \subfile{sections/course.tex}
+% \subfile{sections/ref.tex}
+
+% ------- Other Activities ----------------------------------------------------
+\end{document}
