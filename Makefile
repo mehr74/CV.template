@@ -35,6 +35,9 @@ build: $(CV_SHORT).pdf
 $(CV_SHORT).pdf: $(PAPER_DEPS)
 	$(LATEX) main.tex -O .latex.out -o $@
 
+check-hadolint:
+	@hadolint .devcontainer/texlive.Dockerfile
+
 help:
 	@printf "Usage: make [target]\n"
 	@printf "\n"
