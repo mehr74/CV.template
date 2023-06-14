@@ -9,7 +9,8 @@
 # ============================================================================= #
 # TARGET: develop
 # ============================================================================= #
-FROM texlive/texlive:TL2018-historic-src as Develop
+FROM texlive/texlive@sha256:def547064eec3ba6eed2ac\
+07354b55291f8bc97d446232b8a2b732ae9d20a346 as develop
 
 ARG DOCKER_ENTRYPOINT
 

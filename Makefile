@@ -5,8 +5,6 @@ CV_SHORT:= mehrshad-lotfi
 TEX := $(shell find ./ -type f -name "*.tex")
 CLS := $(shell find ./ -type f -name "*.cls")
 BIB := $(shell find ./ -type f -name "*.bib")
-FIG := $(shell find ./figures -type f -name "*.pdf")
-
 
 include .devcontainer/rules.mk
 
